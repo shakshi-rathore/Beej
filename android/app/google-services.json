@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "237168195428",
+    "project_id": "beej-app",
+    "storage_bucket": "beej-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237168195428:android:ec0af408a5baabb4432c71",
+        "android_client_info": {
+          "package_name": "com.beej.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL2EhMCi-AqjFbd7uRt-6ReWFPZ8HH0oQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
