@@ -40,7 +40,13 @@ export default function ProfileSetupScreen() {
     const user = auth.currentUser;
     if (!user) return Alert.alert('Error', 'User not logged in');
 
-    const response = await fetch('http://192.168.57.191:5000/api/farmers', {
+    // const response = await fetch('http://10.169.76.205:5000/api/farmers', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify({ uid: user.uid, ...form }),
+    // });
+    
+    const response = await fetch('http://10.0.2.2:5000/api/farmers', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ uid: user.uid, ...form }),

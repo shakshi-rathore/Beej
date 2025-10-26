@@ -1,7 +1,7 @@
 import { useLocalSearchParams } from 'expo-router';
 import React from 'react';
 import { Dimensions, Image, ScrollView, Text, View } from 'react-native';
-import { VictoryAxis, VictoryBar, VictoryChart, VictoryTheme } from 'victory-native';
+import { VictoryAxis, VictoryBar, VictoryChart, VictoryTheme } from 'victory';
 
 export default function ContractDetails() {
   const { contract } = useLocalSearchParams();
@@ -75,8 +75,9 @@ export default function ContractDetails() {
         {(parsedContract.photos || []).map((uri: string, i: number) => (
           <Image
             key={i}
-            // source={{ uri: `http://192.168.57.191:5000/uploads/${uri}` }}
-            source={{ uri:`http://10.173.21.191:5000/uploads/${uri}`}}
+            
+            // source={{ uri:`http://10.169.76.205:5000/uploads/${uri}`}}
+            source={{ uri:`http://10.0.2.2:5000/uploads/${uri}`}}
             style={{ width: 160, height: 100, marginRight: 10, borderRadius: 8 }}
           />
         ))}

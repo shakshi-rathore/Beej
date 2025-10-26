@@ -8,8 +8,8 @@ export default function MadadScreen() {
   const router = useRouter();
 
   useEffect(() => {
-  // fetch('http://192.168.57.191:5000/schemes')
-  fetch('http://10.173.21.191:5000/schemes')
+  // fetch('http://10.169.76.205:5000/schemes')
+  fetch('http://10.0.2.2:5000/schemes')
     .then(async res => {
       const text = await res.text();
       // console.log('Raw response:', text);
@@ -33,8 +33,8 @@ export default function MadadScreen() {
   //   router.push(`/madadDetail?id=${id}`);
   // };
 const handleLearnMore = (docPath: string) => {
-  // const fullUrl = `http://192.168.57.191:5000/${docPath}`;
-  const fullUrl = `http://10.173.21.191:5000/${docPath}`;
+  const fullUrl = `http://10.0.2.2:5000/${docPath}`;
+  // const fullUrl = `http://10.173.21.191:5000/${docPath}`;
   Linking.openURL(fullUrl);
 };
   return (

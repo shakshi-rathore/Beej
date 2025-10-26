@@ -26,8 +26,9 @@ const DoctorScreen: React.FC = () => {
       const uid = await AsyncStorage.getItem('uid');
       if (!uid) return alert('User UID not found');
 
-      // const res = await fetch(`http://192.168.57.191:5000/api/farmers/${uid}`);
-      const res = await fetch(`http://10.173.21.191:5000/api/farmers/${uid}`);
+      
+      // const res = await fetch(`http://10.169.76.205:5000/api/farmers/${uid}`);
+      const res = await fetch(`http://10.0.2.2:5000/api/farmers/${uid}`);
       const data = await res.json();
 
       if (data.cropType) {

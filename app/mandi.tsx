@@ -34,8 +34,9 @@ export default function MandiScreen() {
         const uid = await AsyncStorage.getItem('uid');
         if (uid) {
           setFarmerUid(uid);
-          // const res = await axios.get(`http://192.168.57.191:5000/api/contracts/${uid}`);
-          const res = await axios.get(`http://10.173.21.191:5000/api/contracts/${uid}`);
+          
+          // const res = await axios.get(`http://10.169.76.205:5000/api/contracts/${uid}`);
+          const res = await axios.get(`http://10.0.2.2:5000/api/contracts/${uid}`);
           setContracts(res.data);
         } else {
           console.warn('No UID found in AsyncStorage');

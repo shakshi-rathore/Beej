@@ -13,9 +13,9 @@ import {
 } from 'react-native';
 import { auth } from '../utils/firebase';
 
-// const API_URL = 'http://192.168.57.191:5000/api/farmers';
-const API_URL = 'http://10.173.21.191:5000/api/farmers';
 
+// const API_URL = 'http://10.169.76.205:5000/api/farmers';
+const API_URL = 'http://10.0.2.2:5000/api/farmers';
 
 const districts = ['Lucknow', 'Kanpur', 'Varanasi', 'Agra', 'Meerut', 'Noida', 'Prayagraj', 'Ayodhya', 'Mathura', 'Bareilly', 'Aligarh'];
 const languages = ['English', 'Hindi', 'Punjabi', 'Bengali', 'Gujarati', 'Tamil', 'Telugu', 'Marathi'];
@@ -183,8 +183,9 @@ export default function FarmerProfile() {
           <Image
             source={{
               uri: form.profilePic.startsWith('/uploads/')
-                // ? `http://192.168.57.191:5000${form.profilePic}`
-                 ? `http://10.173.21.191:5000${form.profilePic}`
+                
+                //  ? `http://10.169.76.205:5000${form.profilePic}`
+                ? `http://10.0.2.2:5000${form.profilePic}`
                 : form.profilePic,
             }}
             style={styles.image}
