@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# 🌱 Beej – Smart Agriculture & Farmer Empowerment App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Beej is a cross-platform smart agriculture mobile application designed to assist farmers with real-time crop monitoring, disease detection, and market connectivity using modern AI and mobile technologies.
 
-## Get started
+## 📌 Overview
 
-1. Install dependencies
+Traditional farming solutions are fragmented and often lack real-time intelligence. Beej bridges this gap by providing a single integrated platform that combines computer vision, data-driven recommendations, and farmer-centric digital services.
 
-   ```bash
-   npm install
-   ```
+The application empowers farmers to make informed decisions, reduce crop loss, and improve profitability through technology-driven insights.
 
-2. Start the app
+## ✨ Key Features
+### 🌾 Real-Time Crop Monitoring
 
-   ```bash
-   npx expo start
-   ```
+-Provides real-time alerts of weather 
 
-In the output, you'll find options to open the app in a
+- provides seasonal crop recommendations and Location-aware suggestions
+  
+### 🧠 Beej Doctor – AI-Based Crop Disease Detection
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Uses OpenCV for image-based crop disease analysis
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Supports symptom-based questionnaires for early diagnosis
 
-## Get a fresh project
+- Enables preventive treatment through expert recommendations
 
-When you're ready, run:
+- Reduces dependency on late-stage manual inspection
 
-```bash
-npm run reset-project
-```
+### 📊 Seasonal Contract & Financial Dashboard
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Tracks seasonal farming contracts, costs, and expected returns
 
-## Learn more
+- Displays accumulated income and production commitments
 
-To learn more about developing your project with Expo, look at the following resources:
+- Helps farmers plan financially with clear visibility
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 🏛️ Government Scheme Recommendations
 
-## Join the community
+- Location-aware suggestions for relevant government schemes
 
-Join our community of developers creating universal apps.
+- Filters schemes based on crop type, region, and season
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Simplifies access to agricultural benefits and subsidies
+
+### 🌦️ Weather Alerts & Farmer Marketplace
+
+- Map-based weather alerts for local climate conditions
+
+- Built-in digital marketplace connecting farmers with local retailers
+
+- Encourages fair pricing and direct farmer-to-buyer interaction
+
+## 🔄 System Workflow
+
+Farmer Registration
+
+→ Real-Time Monitoring & Alerts
+
+→ Disease Detection (Beej Doctor)
+
+→ Financial & Contract Tracking
+
+→ Marketplace & Government Scheme Access
+
+## 🧩 Technology Stack
+
+- 📱 Frontend:React Native (CLI / Expo),TypeScript
+
+- 🖥️ Backend:Express.js,REST APIs
+
+- 🔐 Authentication & Services:Firebase Authentication,Firebase Cloud Messaging
+
+- 🗄️ Database:MongoDB
+
+#### 🤖 AI & Computer Vision
+
+- OpenCV for disease detection
+
+- Symptom-based rule engines
+
+- Image preprocessing and analysis
+
+## 🚀 Why Beej Stands Out
+
+- Combines AI and mobile technology in one platform
+
+- Designed specifically for real-world farmer needs
+
+- Scalable architecture suitable for rural and urban deployment
+
+- Strong potential for social impact and agri-tech innovation
